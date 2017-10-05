@@ -1,0 +1,137 @@
+//3.Object-Oriented Design Process:Based on 
+                                          //Abstraction
+                                          //Encapsulation
+                                          //Inheritance
+                                          //Polymorphism
+//Problem solving process:
+                         //Understanding the problem
+                         //Desigining the algorithm for its solution with its correctness arguments
+                         //mapping the algorithm to a computer program using a programming language through implementation:invloves language  constraints like data structure support,data type support etc;
+//algorithm design and code development.Focus on inputs and what the program is expected to do finally.Set of functions written so that if any changes be made need not have to write the entire code again.This kind of modular approach allows us to divide the problem into sub-tasks and each sub-task is handled through a function.
+//Other aspects:Efficiency in utilizing resources like memory, soace , CPU time.Reliablity, portability..
+
+//Essential qualities of  a good software:
+                                         //Correctness:Should perform the intended task(s)
+                                         //Completeness:No unexpected behaviour
+                                         //Robustness:should not crash in abnormal situations,should terminate gracefully
+                                         //Reusability:drcouple generic behaviour from specific behaviour
+                                         //Flexibility:Ability to adapt to a slightly different set of requirements
+                                         //Maintainability:Should be easy to maintain
+                                         //Efficiency:Resouces like CPU time, memory, space etc, used in in an optimal way.
+                                         //Documentation :To make easier to understand for the developer as well as other developers
+//Software Life Cycle
+                   //Phase 1:Requirement Analysis Phase
+                   //Phase 2:Design Phase
+                   //Phase 3:Implementation Phase
+/*Object Oriented Design using UML:
+            
+          Unified Modeling Language(UML): a language that describes static and dynamic behaviour of the object-oriented software system 
+                                          abstrcating implementation details.Similar to a flow chart decription.UML provides broad collection 
+                                          of constructs like class diagrams and semantic association between them.They are data centric instead 
+                                          of algorithmic centric. 
+ 
+               ***Class Representation:Rectangular boxes with three partitions:
+
+                                           ----------------------------
+                                           | INSTANCE :<CLASS NAME>   |
+                                           ----------------------------
+                                           |Insatnces+Class Attributes|
+                                           |<var_identifier> : <Type> |
+                                           ----------------------------
+                                           |                          |
+                                           |     Behaviour            |
+                                           |        of                |
+                                           |        the               |
+                                           |       class              |
+                                           |                          |
+                                           ----------------------------
+                                      ---> <variable_identifier> : <Type>
+                                      ---> <acces_specifier(+,-,#,~)><method_name> : return_type
+                                              +(plus) is for public
+                                              -(minus) is for private
+                                              #(hash) is for protected
+                                              ~(tilde) is for package
+                                      --->return type is void for set method
+                                      --->overloaded functions mentioned through their signatures
+                                      --->Nmae of abstract classes appear in italic font followed by {abstract}
+                                      --->class attrivutes/methods prefixed with a dollar($) sign.
+
+Example:
+                                    -------------------------------------------
+                                    |            Ramesh : Student             | 
+                                    -------------------------------------------
+                                    |  -Name : String                         |
+                                    |  -age : int                             |
+                                    |  -DoB : Date                            |
+                                    |  -cgpa :float                           |
+                                    -------------------------------------------
+                                    |  +getAge() : int                        |
+                                    |  +getName() :String                     |
+                                    |  +getDoB() : Date                       |
+                                    |  #setCG(newCG : float) : void           |
+                                    |  #setGrade(letterGrade : char) : void   |
+                                    |  #setMarks(subjectMarks : float) : void |
+                                    -------------------------------------------
+
+               ***Inheritance generalization:Represented by headed arrow.Java doesn't allow multile inheritance and this effect is achieved
+                                             by interface inheritance.
+                                   *Class Inheritance-UML representation
+
+                                                          ---------------------------------------------
+                                                          |                 Superclass                |
+                                                          ---------------------------------------------
+                                                          |-attribute : <type1>                       |
+                                                          |-attribute : <type2>                       |
+                                                          |-attribute : <type3>                       |
+                                                          | ........                                  |
+                                                          ---------------------------------------------
+                                                          |+genericMethod1(paramlist1) : <return type>|
+                                                          |+genericMethod2(paramlist2) : <return type>|                          
+                                                          |#restrictedMethod(paramlist): <return type>|
+                                                          ---------------------------------------------
+                                                                               ^
+                                                                               |
+                                                                               |
+                                                    __________________________________________________________
+                                                    |                                                        |
+                                                    |                                                        |
+                            --------------------------------------------         --------------------------------------------
+                            |                   Subclass1              |         |                   Subclass2              |
+                            --------------------------------------------         --------------------------------------------
+                            |-<specific attributes>                    |         |<specificattributes>                      |          
+                            -------------------------------------------          --------------------------------------------
+                            |+specifiMethod1(paramList) : <return type>|         |+specifiMethod1(paramList) : <return type>|
+                            |#specificMethod2(paramList): <return type>|         |#specificMethod2(paramList): <return type>|
+                            -------------------------------------------          --------------------------------------------
+
+ 
+
+                                                                                           
+                                    *Interface Inheritance-UML representation(Arrows dotted)
+                                    
+
+                                                          ---------------------------------------------
+                                                          |          <<Interface Type>>               |
+                                                          ---------------------------------------------
+                                                          |                                           |
+                                                          |                                           |
+                                                          ---------------------------------------------
+                                                          |+method1(paramlist) : <return type>        |
+                                                          |+method2(paramlist) : <return type>        |                          
+                                                          ---------------------------------------------
+                                                                               ^
+                                                                               |
+                                                                               |
+                                                    ----------------------------------------------------------
+                                                    |                                                        |
+                                                    |                                                        |
+                            --------------------------------------------         --------------------------------------------
+                            |                   Class A                |         |                   Class B                |
+                            --------------------------------------------         --------------------------------------------
+                            |-<AttributeList>                          |         |<AttributeList>                           |          
+                            --------------------------------------------         --------------------------------------------
+                            |+method1(paramList) : <return type>       |         |+method1(paramList) : <return type>       |
+                            |+method2(paramList): <return type>        |         |+method2(paramList): <return type>        |
+                            |..............other methods               |         |.......other methods                      |
+                            --------------------------------------------         --------------------------------------------
+*/

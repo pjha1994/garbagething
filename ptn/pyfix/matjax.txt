@@ -1,0 +1,36 @@
+$$ {x^2}^i $$
+$$x_i^2  {x_i}^2 x_{i^2} x^{5^6} {x^5}^6 $$
+
+$$\alpha \beta \gamma \delta\theta \omega \tau \epsilon \mu $$
+
+ $$\{\} ()[] $$
+
+$$\left(\frac12\frac23\right)$$
+
+$$\sqrt{\frac{\hat{x_1^2}}{\hat{s_{11}}} + \frac{\hat{x_2^2}}{\hat{s_{22}}}}$$
+
+\begin{matrix}
+        1 & x & x^2 \\
+        1 & y & y^2 \\
+        1 & z & z^2 \\
+        \end{matrix}
+
+
+[;\begin{matrix}
+1&x&x^2\\
+1&y&y^2\\
+1&z&z^2\\
+\end{matrix};]
+
+[;\alpha \beta \gamma \delta\theta \omega \tau \epsilon \mu;]
+
+[;x_i^2  {x_i}^2 x_{i^2} x^{5^6} {x^5}^6;]
+
+[;\sqrt{\frac{\hat{x_1^2}}{\hat{s_{11}}} + \frac{\hat{x_2^2}}{\hat{s_{22}}}};]
+
+[;\{\} ()[] ;]
+
+
+Automata theory has a lot of proofs. Sometimes I don't get how this is a proof. Take for example the "Equivalence of NFA and DFA"...The proof for this statement(two way hypothesis and conclusion) shows how to "convert an NFA to DFA" and "DFA to NFA". How can this be a proof given that we ourselves have done changes in the construction of one from the other. Similarly there is this "Pumping Lemma" which I understood how to apply but not well enough to prove it. I need to understand these proofs in a very detailed manner so that I can write it myself.
+Also, if we are to look at SIPSER's, it skipped a lot of topics in the Automata Theory like, Finite Automata with Output(Mealy and Moore Machine), Greibach Normal Form(GNF), closure property and decision algorithms for Context Free Language, Equivalence of Pushdown Automata accepted by Final state and accepted by Empty Stack, Equivalence of PDA and CFG, converting regular grammar to Finite Automata, converting Finite Automata to regular grammar.
+Where can I find a detailed description of above topics with their respective proofs?
